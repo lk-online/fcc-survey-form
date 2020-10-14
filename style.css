@@ -1,0 +1,80 @@
+article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #795b0d1c;
+    font-size: 1.1em;
+    align-content: center;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw 4vw;
+    background-image: url(daisy.jpeg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#description {
+    margin-top: 58vh;
+    background-color: #f5f5f5;
+    padding: 2vw;
+}
+
+#survey-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 640px;
+}
+
+#title {
+    text-align: center;
+    box-shadow: 0px 0px 50px #f5f5f5;
+    padding: 2vw;
+    font-size: 2em;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.form-field {
+    margin-bottom: calc(5px + 1vw);
+    background-color: #f5f5f5;
+    padding: .5vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+p {
+    margin-top: 0px;
+}
+
+label:first-child, p {
+    margin-bottom: calc(5px + .8vw);
+    flex-basis: 100%;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
+#submit {
+    height: 4vw;
+    min-height: 25px;
+    background-color: #795b0d1c;
+    font-size: 1.2em;
+}
+
+#submit:hover {
+    background-color: #795b0d52;
+    cursor: pointer;
+}

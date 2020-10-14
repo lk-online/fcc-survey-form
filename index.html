@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fcc Survey Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,8 +24,8 @@
             </div>
             <div class="form-field">
                 <label for="number" id="number-label">Age (optional)</label>
-                <input type="number" id="number" min="0" max="123"
-                    placeholder="we only accept ages from 0 to 123 years old">
+                <input type="number" id="number" min="1" max="1337"
+                    placeholder="we only accept ages from 1 to 1337 years old">
             </div>
             <div class="form-field">
                 <label for="play">How would you best describe yourself as a person?</label>
@@ -37,12 +38,20 @@
             </div>
             <div class="form-field">
                 <p>Do you share your life's journey with a cat?</p>
-                <input type="radio" name="cat-owner" id="yes" value="Yes">
-                <label for="yes">Yes</label>
-                <input type="radio" name="cat-owner" id="plan" value="In my plans">
-                <label for="plan">In my plans</label>
-                <input type="radio" name="cat-owner" id="no" value="No and not planning to">
-                <label for="no">No and not planning to</label>
+                <ul>
+                    <li>
+                        <input type="radio" name="cat-owner" id="yes" value="Yes">
+                        <label for="yes">Yes</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="cat-owner" id="plan" value="In my plans">
+                        <label for="plan">In my plans</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="cat-owner" id="no" value="No and not planning to">
+                        <label for="no">No and not planning to</label>
+                    </li>
+                </ul>
             </div>
             <div class="form-field">
                 <label for="play">How would you feel if you could spend a day with Daisy?</label>
@@ -56,19 +65,29 @@
             <div class="form-field">
                 <p>Choose which characteristic(s) describes Daisy the most (check all <span>that
                         apply</span>)</p>
-                <input type="checkbox" name="smart" id="smart" value="smart">
-                <label for="smart">Smart</label>
-                <input type="checkbox" name="beautiful" id="beautiful" value="beautiful">
-                <label for="beautiful">Beautiful</label>
-                <input type="checkbox" name="awesome" id="awesome" value="awesome">
-                <label for="awesome">Awesome</label>
-                <input type="checkbox" name="notGrumpy" id="notGrumpy" value="not grumpy">
-                <label for="notGrumpy">Not grumpy at all</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="smart" id="smart" value="smart">
+                        <label for="smart">Smart</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="beautiful" id="beautiful" value="beautiful">
+                        <label for="beautiful">Beautiful</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="awesome" id="awesome" value="awesome">
+                        <label for="awesome">Awesome</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="notGrumpy" id="notGrumpy" value="not grumpy">
+                        <label for="notGrumpy">Not grumpy at all</label>
+                    </li>
+                </ul>
             </div>
-            <div class="form-field"></div>
-            <label for="say">Is there anything you would like to say to Daisy?</label>
-            <textarea name="say" id="say" cols="30" rows="10"
-                placeholder="please be kind because Daisy is very tired today"></textarea>
+            <div class="form-field">
+                <label for="say">Is there anything you would like to say to Daisy?</label>
+                <textarea name="say" id="say" cols="30" rows="10"
+                    placeholder="please be kind because Daisy is very tired today"></textarea>
             </div>
             <input type="submit" id="submit" value="submit">
         </form>
